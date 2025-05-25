@@ -4,7 +4,7 @@ import stack.LinkedListStack;
 
 public class Infix {
 
-    public String toPostfix(String infix) {
+    public String toPostfix(String infix) throws Underflow {
         LinkedListStack<Character> stack = new LinkedListStack<>();
         StringBuilder postfix = new StringBuilder();
 
